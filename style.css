@@ -1,0 +1,118 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #ffcc33, #ff6699);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5em;
+}
+
+main {
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.styled-button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #ff6699;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.styled-button:hover {
+    background-color: #ff3366;
+    transform: scale(1.1);
+}
+
+.quote-display {
+    margin-top: 20px;
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+.countdown-section {
+    margin-top: 30px;
+}
+
+.countdown-display {
+    font-size: 1.5em;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.greeting-section h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5em;
+    margin: 20px 0;
+}
+
+.animate-fade {
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
